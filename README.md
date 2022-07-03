@@ -36,7 +36,8 @@ simple phone number locator
            
 # Reverse shells 
  
-To use the listener change the ip in listener.py and run it to start listening.
+To use the listener change the ip in listener.py and run it to start listening, also makesure to add your ip on the run.py as well
+
 
 Then send the run.py file to your victim.
 
