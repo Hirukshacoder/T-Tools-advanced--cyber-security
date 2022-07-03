@@ -1,0 +1,16 @@
+Random password Generator 1.0 VOL
+=================================
+
+Owner and developer :- @TreveenHirukshaBastian
+staff :- @Nadith_Liyanage
+
+@TreveenHirukshaBastian :- developer of the generators
+@Nadith_Liyanage :- developer of the file system to save passwords
+@TreveenHirukshaBastian :- developer of the main.py
+@TreveenHirukshaBastian :- assets futher modified
+
+Special Thanks to @Nadith_Liyanage for developing the file system
+
+VOL 2.0 will be released soon stay tuned!!!!
+
+Made with ❤ by THB
