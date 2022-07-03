@@ -1,5 +1,4 @@
 import socket, sys, time
-from ipaddress import ip_address
 
 
 def listen(ip,port):
@@ -26,7 +25,7 @@ def listen(ip,port):
 
 
 
-listen(ip_address,9999)
+listen("0.0.0.0",9999)
 
 
 
