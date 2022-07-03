@@ -34,9 +34,11 @@ simple phone number locator
     $ pip install -r requirements.txt
     $ python3 main.py
            
-      
-To use the listener change the ip in listener.py and run it to start listening
-Then send the run.py file to your victim
+# Reverse shells 
+ 
+To use the listener change the ip in listener.py and run it to start listening.
+
+Then send the run.py file to your victim.
 
 
     kali@attacker ~ $ python3 listen.py
