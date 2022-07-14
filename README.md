@@ -73,8 +73,23 @@ Makesure you add your ip to the victim's command.
            
            
            
-      
+     
  
            
-                      
+    
+# e-mail Attacker     
+
+* This tool needs gmail less secure app access.
+
+* To use it for phishing you can make a phishing link and attach to it.
+
+* Your passwords won't be saved.
+
+To activate 
+
+        kali@attacker - $ python3 email-attacker.py 
+        
+
+
+
 Made with 💖 by THb 
