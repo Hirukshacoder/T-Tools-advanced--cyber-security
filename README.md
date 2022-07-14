@@ -50,7 +50,7 @@ Makesure you add your ip to the victim's command.
 
 * Another thing is that you can start listening on any port.
  
-* Also you have to add your ip to the net.py as well as the victim's command.
+* Also you have to add your ip to the net.py as well as the victim's command in version 1.0. 
 
 * And you can use linode, aws or google cloud services to make your cloud machine.
 
@@ -73,9 +73,8 @@ Makesure you add your ip to the victim's command.
            
            
            
-</> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </>         
-</> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </> </>           
+      
  
            
                       
-Made with 💖 by THB 
+Made with 💖 by THb 
