@@ -34,7 +34,7 @@ simple phone number locator
     $ pip install -r requirements.txt
     $ python3 main.py
            
-# Reverse shells 
+# Reverse shells (only linux)
  
 To use the listener change the ip in net.py and run it to start listening
 
