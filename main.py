@@ -82,7 +82,7 @@ elif select == '5':
     print("")
     subprocess.run("cls", shell=True)
     subprocess.run("clear", shell=True)
-    from net import *
+    from reverse import *
 
 elif select == '6':
     print("")
