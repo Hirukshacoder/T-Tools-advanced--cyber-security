@@ -1,4 +1,5 @@
 import ssl
+import smtplib
 from email.message import EmailMessage
 from tabulate import tabulate
 from termcolor import colored
@@ -21,28 +22,16 @@ output = tabulate(table, tablefmt='grid')
 
 print(output)
 
-
-# instructons
-print("")
-text = colored("[*] Enable less secure app access in your gmail account in order to use this tool.", "green")
-print(text)
-print("")
-print("")
-text = colored("[*] Welcome to Email Attacker - send scary emails!!!! ", "green")
-print(text)
-print("")
-text = colored("[*] create a phishing link with zphisher to use this tool for ethical hacking", "green")
-print(text)
-print("")
-
 # Email details
 sender_email = input("Enter your Email Address: ")
 sender_email_password = input("Enter your password: ")
 receiver_email = input("Enter the email of the receiver: ")
 subject = input("Enter your subject: ")
+attach = input("Do you want to attach a file [y/n]:")
 body = input("Enter the body of the email: ")
 name = input("What is your Name? ")
 print("")
+
 
 # Email variables
 message = EmailMessage()
@@ -51,15 +40,24 @@ message["To"] = receiver_email
 message["Subject"] = subject
 message.set_content(body)
 
-# html
-html = f"""
-<html>
-<head>
-<h1>{subject}</h1>
-<h2>{body}</h2>
+if attach == "y":
+    enter_path = input("Enter the path to your file: ")
 
-"""
-message.add_alternative(html, subtype="html")
+    with open(enter_path, "rb") as f:
+        file_data = f.read()
+        print("file data in binary", file_data)
+
+        file_name = f.name
+        print("file name is",file_name)
+
+
+        message.add_attachment(file_data,maintype="html",subtype="txt",filename=file_name)
+
+
+if attach == "n":
+    pass
+
+
 
 # sending email
 context = ssl.create_default_context()
